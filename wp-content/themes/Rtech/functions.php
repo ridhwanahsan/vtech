@@ -49,6 +49,61 @@ add_action('after_setup_theme', 'vtech_theme_support');
 
 
 
+function event_widgets_init()
+{
+
+    register_sidebar(array(
+        'name' => __('Blog Sidebar', 'event'),
+        'id' => 'blog-sidebar',
+        'description' => __('Widgets in this area will be shown on blog sidebar', 'event'),
+        'before_widget' => '<div id="%1$s" class="sidebar__widget mb-30 %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="sidebar__widget-title">',
+        'after_title' => '</h3>',
+    ));
+
+    register_sidebar(array(
+        'name' => __('Footer Widget 01', 'event'),
+        'id' => 'footer-widget-1',
+        'description' => __('Widgets in this area will be shown on footer widget 01 column.', 'event'),
+        'before_widget' => '<div id="%1$s" class="tp-footer-widget footer-cols-1 pr-75 tp-footer-widget-cutm-pdg-4 %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="tp-footer-title tp-footer-4-title">',
+        'after_title' => '</h4>',
+    ));
+
+    register_sidebar(array(
+        'name' => __('Footer Widget 02', 'event'),
+        'id' => 'footer-widget-2',
+        'description' => __('Widgets in this area will be shown on footer widget 01 column.', 'event'),
+        'before_widget' => '<div id="%1$s" class="tp-footer-widget tp-footer-4-widget footer-cols-2 %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="tp-footer-title tp-footer-4-title">',
+        'after_title' => '</h4>',
+    ));
+
+    register_sidebar(array(
+        'name' => __('Footer Widget 03', 'event'),
+        'id' => 'footer-widget-3',
+        'description' => __('Widgets in this area will be shown on footer widget 01 column.', 'event'),
+        'before_widget' => '<div id="%1$s" class="tp-footer-widget tp-footer-4-widget footer-cols-3 pl-50 tp-footer-widget-cutm-pdg-3 %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="tp-footer-title tp-footer-4-title">',
+        'after_title' => '</h4>',
+    ));
+
+    register_sidebar(array(
+        'name' => __('Footer Widget 04', 'event'),
+        'id' => 'footer-widget-4',
+        'description' => __('Widgets in this area will be shown on footer widget 01 column.', 'event'),
+        'before_widget' => '<div id="%1$s" class="tp-footer-widget footer-cols-4 %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="tp-footer-title tp-footer-4-title">',
+        'after_title' => '</h4>',
+    ));
+
+}
+add_action('widgets_init', 'event_widgets_init');
 
 
 

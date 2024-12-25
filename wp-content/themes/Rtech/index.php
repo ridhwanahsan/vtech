@@ -9,120 +9,15 @@
                     <div class="blog-content-left">
                         <div class="box-list-blogs">
                             <div class="row">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="card-blog-7">
-                                        <div class="card-image">
-                                            <a href="news-details.html"><img src="assets/imgs/pages/blog/blog.png" alt="Vatech" /></a>
-                                        </div>
-                                        <div class="card-info">
-                                            <div class="text-end mb-2">
-                                                <span class="post-date sub-heading-ag-sm d-inline-block">Oct 19</span>
-                                            </div>
-                                            <a href="news-details.html" class="heading-md">Securing your business securing your reputation</a>
-                                            <a href="news-details.html" class="link-more button-ag-bold">
-                                                Discover More
-                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M11.8125 5.75C11.8125 6.24219 11.4023 6.65234 10.9375 6.65234H7V10.5898C7 11.0547 6.58984 11.4375 6.125 11.4375C5.63281 11.4375 5.25 11.0547 5.25 10.5898V6.65234H1.3125C0.820312 6.65234 0.4375 6.24219 0.4375 5.75C0.4375 5.28516 0.820312 4.90234 1.3125 4.90234H5.25V0.964844C5.25 0.472656 5.63281 0.0625 6.125 0.0625C6.58984 0.0625 7 0.472656 7 0.964844V4.90234H10.9375C11.4023 4.875 11.8125 5.28516 11.8125 5.75Z" fill="" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="card-blog-7">
-                                        <div class="card-image">
-                                            <a href="news-details.html"><img src="assets/imgs/pages/blog/blog2.png" alt="Vatech" /></a>
-                                        </div>
-                                        <div class="card-info">
-                                            <div class="text-end mb-2">
-                                                <span class="post-date sub-heading-ag-sm d-inline-block">Oct 19</span>
-                                            </div>
-                                            <a href="news-details.html" class="heading-md">Future-Proof Your Business with Cutting-Edge IT Solutions</a>
-                                            <a href="news-details.html" class="link-more button-ag-bold">
-                                                Discover More
-                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M11.8125 5.75C11.8125 6.24219 11.4023 6.65234 10.9375 6.65234H7V10.5898C7 11.0547 6.58984 11.4375 6.125 11.4375C5.63281 11.4375 5.25 11.0547 5.25 10.5898V6.65234H1.3125C0.820312 6.65234 0.4375 6.24219 0.4375 5.75C0.4375 5.28516 0.820312 4.90234 1.3125 4.90234H5.25V0.964844C5.25 0.472656 5.63281 0.0625 6.125 0.0625C6.58984 0.0625 7 0.472656 7 0.964844V4.90234H10.9375C11.4023 4.875 11.8125 5.28516 11.8125 5.75Z" fill="" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="card-blog-7">
-                                        <div class="card-image">
-                                            <a href="news-details.html"><img src="assets/imgs/pages/blog/blog4.png" alt="Vatech" /></a>
-                                        </div>
-                                        <div class="card-info">
-                                            <div class="text-end mb-2">
-                                                <span class="post-date sub-heading-ag-sm d-inline-block">Oct 19</span>
-                                            </div>
-                                            <a href="news-details.html" class="heading-md">Securing Your Data, Securing Your Future</a>
-                                            <a href="news-details.html" class="link-more button-ag-bold">
-                                                Discover More
-                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M11.8125 5.75C11.8125 6.24219 11.4023 6.65234 10.9375 6.65234H7V10.5898C7 11.0547 6.58984 11.4375 6.125 11.4375C5.63281 11.4375 5.25 11.0547 5.25 10.5898V6.65234H1.3125C0.820312 6.65234 0.4375 6.24219 0.4375 5.75C0.4375 5.28516 0.820312 4.90234 1.3125 4.90234H5.25V0.964844C5.25 0.472656 5.63281 0.0625 6.125 0.0625C6.58984 0.0625 7 0.472656 7 0.964844V4.90234H10.9375C11.4023 4.875 11.8125 5.28516 11.8125 5.75Z" fill="" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="card-blog-7">
-                                        <div class="card-image">
-                                            <a href="news-details.html"><img src="assets/imgs/pages/blog/blog5.png" alt="Vatech" /></a>
-                                        </div>
-                                        <div class="card-info">
-                                            <div class="text-end mb-2">
-                                                <span class="post-date sub-heading-ag-sm d-inline-block">Oct 19</span>
-                                            </div>
-                                            <a href="news-details.html" class="heading-md">Boosting Efficiency with Tailored IT Solutions</a>
-                                            <a href="news-details.html" class="link-more button-ag-bold">
-                                                Discover More
-                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M11.8125 5.75C11.8125 6.24219 11.4023 6.65234 10.9375 6.65234H7V10.5898C7 11.0547 6.58984 11.4375 6.125 11.4375C5.63281 11.4375 5.25 11.0547 5.25 10.5898V6.65234H1.3125C0.820312 6.65234 0.4375 6.24219 0.4375 5.75C0.4375 5.28516 0.820312 4.90234 1.3125 4.90234H5.25V0.964844C5.25 0.472656 5.63281 0.0625 6.125 0.0625C6.58984 0.0625 7 0.472656 7 0.964844V4.90234H10.9375C11.4023 4.875 11.8125 5.28516 11.8125 5.75Z" fill="" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="card-blog-7">
-                                        <div class="card-image">
-                                            <a href="news-details.html"><img src="assets/imgs/pages/blog/blog7.png" alt="Vatech" /></a>
-                                        </div>
-                                        <div class="card-info">
-                                            <div class="text-end mb-2">
-                                                <span class="post-date sub-heading-ag-sm d-inline-block">Oct 19</span>
-                                            </div>
-                                            <a href="news-details.html" class="heading-md">The Key to Business Growth: Scalable IT Infrastructure</a>
-                                            <a href="news-details.html" class="link-more button-ag-bold">
-                                                Discover More
-                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M11.8125 5.75C11.8125 6.24219 11.4023 6.65234 10.9375 6.65234H7V10.5898C7 11.0547 6.58984 11.4375 6.125 11.4375C5.63281 11.4375 5.25 11.0547 5.25 10.5898V6.65234H1.3125C0.820312 6.65234 0.4375 6.24219 0.4375 5.75C0.4375 5.28516 0.820312 4.90234 1.3125 4.90234H5.25V0.964844C5.25 0.472656 5.63281 0.0625 6.125 0.0625C6.58984 0.0625 7 0.472656 7 0.964844V4.90234H10.9375C11.4023 4.875 11.8125 5.28516 11.8125 5.75Z" fill="" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="card-blog-7">
-                                        <div class="card-image">
-                                            <a href="news-details.html"><img src="assets/imgs/pages/blog/blog8.png" alt="Vatech" /></a>
-                                        </div>
-                                        <div class="card-info">
-                                            <div class="text-end mb-2">
-                                                <span class="post-date sub-heading-ag-sm d-inline-block">Oct 19</span>
-                                            </div>
-                                            <a href="news-details.html" class="heading-md">Protect Your Digital Assets: A Guide to Cybersecurity</a>
-                                            <a href="news-details.html" class="link-more button-ag-bold">
-                                                Discover More
-                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M11.8125 5.75C11.8125 6.24219 11.4023 6.65234 10.9375 6.65234H7V10.5898C7 11.0547 6.58984 11.4375 6.125 11.4375C5.63281 11.4375 5.25 11.0547 5.25 10.5898V6.65234H1.3125C0.820312 6.65234 0.4375 6.24219 0.4375 5.75C0.4375 5.28516 0.820312 4.90234 1.3125 4.90234H5.25V0.964844C5.25 0.472656 5.63281 0.0625 6.125 0.0625C6.58984 0.0625 7 0.472656 7 0.964844V4.90234H10.9375C11.4023 4.875 11.8125 5.28516 11.8125 5.75Z" fill="" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+
+                                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <?php get_template_part('template-parts/blog/content'); ?>
+                    <?php endwhile; else : ?>
+                    <p><?php _e( 'No Posts To Display.' ); ?></p>
+                    <?php endif; ?>
+
+                               
+
                             </div>
                             <div class="box-paginations">
                                 <nav>
@@ -158,102 +53,9 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="blog-content-right">
-                        <div class="sidebar-border border-10 bdr-5 p-4 mb-4">
-                            <div class="form-search-sidebar">
-                                <form action="#" method="get">
-                                    <input type="text" class="form-control" placeholder="Enter your keywords..." />
-                                    <button type="submit" class="btn btn-search">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.5781 16.8594C19.1055 17.4219 19.1055 18.3008 18.5781 18.8633C18.0156 19.3906 17.1367 19.3906 16.5742 18.8633L12.3906 14.6445C10.9492 15.5938 9.19141 16.0859 7.29297 15.8398C4.05859 15.3828 1.45703 12.7461 1.03516 9.54688C0.4375 4.76562 4.48047 0.722656 9.26172 1.32031C12.4609 1.74219 15.0977 4.34375 15.5547 7.57812C15.8008 9.47656 15.3086 11.2344 14.3594 12.6406L18.5781 16.8594ZM3.77734 8.5625C3.77734 11.0586 5.78125 13.0625 8.27734 13.0625C10.7383 13.0625 12.7773 11.0586 12.7773 8.5625C12.7773 6.10156 10.7383 4.0625 8.27734 4.0625C5.78125 4.0625 3.77734 6.10156 3.77734 8.5625Z" fill="" />
-                                        </svg>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="sidebar-border border-10 bdr-5 p-4 mb-4">
-                            <h4 class="sub-heading-ag-xl mb-2">Recent post</h4>
-                            <ul class="recent-news-list-md">
-                                <li>
-                                    <div class="news-image">
-                                        <a href="news-details.html"><img src="assets/imgs/pages/home6/blog.png" alt="Vatech" /></a>
-                                    </div>
-                                    <div class="news-info">
-                                        <div class="news-postdate">
-                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M3.5625 2H6.9375V1.0625C6.9375 0.757812 7.17188 0.5 7.5 0.5C7.80469 0.5 8.0625 0.757812 8.0625 1.0625V2H9C9.82031 2 10.5 2.67969 10.5 3.5V11C10.5 11.8438 9.82031 12.5 9 12.5H1.5C0.65625 12.5 0 11.8438 0 11V3.5C0 2.67969 0.65625 2 1.5 2H2.4375V1.0625C2.4375 0.757812 2.67188 0.5 3 0.5C3.30469 0.5 3.5625 0.757812 3.5625 1.0625V2ZM1.125 6.3125H3V5H1.125V6.3125ZM1.125 7.4375V8.9375H3V7.4375H1.125ZM4.125 7.4375V8.9375H6.375V7.4375H4.125ZM7.5 7.4375V8.9375H9.375V7.4375H7.5ZM9.375 5H7.5V6.3125H9.375V5ZM9.375 10.0625H7.5V11.375H9C9.1875 11.375 9.375 11.2109 9.375 11V10.0625ZM6.375 10.0625H4.125V11.375H6.375V10.0625ZM3 10.0625H1.125V11C1.125 11.2109 1.28906 11.375 1.5 11.375H3V10.0625ZM6.375 5H4.125V6.3125H6.375V5Z" fill=""></path>
-                                            </svg>
-                                            <span class="paragraph-rubik-r-sm">August 17, 2024</span>
-                                        </div>
-                                        <a href="news-details.html" class="sub-heading-ag-lg news-link">A quick solutions for daily problem</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="news-image">
-                                        <a href="news-details.html"><img src="assets/imgs/pages/home6/blog.png" alt="Vatech" /></a>
-                                    </div>
-                                    <div class="news-info">
-                                        <div class="news-postdate">
-                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M3.5625 2H6.9375V1.0625C6.9375 0.757812 7.17188 0.5 7.5 0.5C7.80469 0.5 8.0625 0.757812 8.0625 1.0625V2H9C9.82031 2 10.5 2.67969 10.5 3.5V11C10.5 11.8438 9.82031 12.5 9 12.5H1.5C0.65625 12.5 0 11.8438 0 11V3.5C0 2.67969 0.65625 2 1.5 2H2.4375V1.0625C2.4375 0.757812 2.67188 0.5 3 0.5C3.30469 0.5 3.5625 0.757812 3.5625 1.0625V2ZM1.125 6.3125H3V5H1.125V6.3125ZM1.125 7.4375V8.9375H3V7.4375H1.125ZM4.125 7.4375V8.9375H6.375V7.4375H4.125ZM7.5 7.4375V8.9375H9.375V7.4375H7.5ZM9.375 5H7.5V6.3125H9.375V5ZM9.375 10.0625H7.5V11.375H9C9.1875 11.375 9.375 11.2109 9.375 11V10.0625ZM6.375 10.0625H4.125V11.375H6.375V10.0625ZM3 10.0625H1.125V11C1.125 11.2109 1.28906 11.375 1.5 11.375H3V10.0625ZM6.375 5H4.125V6.3125H6.375V5Z" fill=""></path>
-                                            </svg>
-                                            <span class="paragraph-rubik-r-sm">August 17, 2024</span>
-                                        </div>
-                                        <a href="news-details.html" class="sub-heading-ag-lg news-link">Podcasting operational change any...</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="news-image">
-                                        <a href="news-details.html"><img src="assets/imgs/pages/home6/blog.png" alt="Vatech" /></a>
-                                    </div>
-                                    <div class="news-info">
-                                        <div class="news-postdate">
-                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M3.5625 2H6.9375V1.0625C6.9375 0.757812 7.17188 0.5 7.5 0.5C7.80469 0.5 8.0625 0.757812 8.0625 1.0625V2H9C9.82031 2 10.5 2.67969 10.5 3.5V11C10.5 11.8438 9.82031 12.5 9 12.5H1.5C0.65625 12.5 0 11.8438 0 11V3.5C0 2.67969 0.65625 2 1.5 2H2.4375V1.0625C2.4375 0.757812 2.67188 0.5 3 0.5C3.30469 0.5 3.5625 0.757812 3.5625 1.0625V2ZM1.125 6.3125H3V5H1.125V6.3125ZM1.125 7.4375V8.9375H3V7.4375H1.125ZM4.125 7.4375V8.9375H6.375V7.4375H4.125ZM7.5 7.4375V8.9375H9.375V7.4375H7.5ZM9.375 5H7.5V6.3125H9.375V5ZM9.375 10.0625H7.5V11.375H9C9.1875 11.375 9.375 11.2109 9.375 11V10.0625ZM6.375 10.0625H4.125V11.375H6.375V10.0625ZM3 10.0625H1.125V11C1.125 11.2109 1.28906 11.375 1.5 11.375H3V10.0625ZM6.375 5H4.125V6.3125H6.375V5Z" fill=""></path>
-                                            </svg>
-                                            <span class="paragraph-rubik-r-sm">August 17, 2024</span>
-                                        </div>
-                                        <a href="news-details.html" class="sub-heading-ag-lg news-link">Capitalize on low Idea hanging fruit</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="sidebar-border border-10 bdr-5 p-4 mb-4">
-                            <h4 class="sub-heading-ag-xl mb-2">Categories</h4>
-                            <div class="content-sidebar">
-                                <ul>
-                                    <li>
-                                        <a href="news-grid-sidebar.html">> Agency News <span>(10)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="news-grid-sidebar.html">> Digital Marketing <span>(18)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="news-grid-sidebar.html">> Information Technology <span>(15)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="news-grid-sidebar.html">> New Ideas <span>(13)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="news-grid-sidebar.html">> Marketing & Branding <span>(12)</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="sidebar-border border-10 bdr-5 p-4 mb-4">
-                            <h4 class="sub-heading-ag-xl mb-3">Tags</h4>
-                            <div class="content-sidebar">
-                                <a href="news-grid-sidebar.html" class="btn btn-tag me-2 mb-2">Design</a>
-                                <a href="news-grid-sidebar.html" class="btn btn-tag me-2 mb-2">Development</a>
-                                <a href="news-grid-sidebar.html" class="btn btn-tag me-2 mb-2">Graphic</a>
-                                <a href="news-grid-sidebar.html" class="btn btn-tag me-2 mb-2">UI/UX</a>
-                                <a href="news-grid-sidebar.html" class="btn btn-tag me-2 mb-2">Apps</a>
-                                <a href="news-grid-sidebar.html" class="btn btn-tag me-2 mb-2">Web</a>
-                                <a href="news-grid-sidebar.html" class="btn btn-tag me-2 mb-2">Agency</a>
-                                <a href="news-grid-sidebar.html" class="btn btn-tag me-2 mb-2">Digital</a>
-                            </div>
-                        </div>
-                    </div>
+                   <?php get_sidebar();?>
                 </div>
             </div>
         </section>
