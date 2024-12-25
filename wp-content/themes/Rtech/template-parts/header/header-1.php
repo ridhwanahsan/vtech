@@ -180,7 +180,7 @@
             </button>
         </div>
         <div class="offCanvas__logo mb-20">
-            <a href="index.html"><img src="<?php echo esc_url($offCanvas_menu_logo)?>" alt="Logo" /></a>
+            <a href="index.html"><img src="<?php echo esc_url($header01_menu_logo)?>" alt="Logo" /></a>
         </div>
         <div class="offCanvas__side-info mb-30">
        <?php vtech_menu();?>

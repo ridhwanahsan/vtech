@@ -15,3 +15,8 @@ header .navbar-expand-lg .navbar-nav .nav-link a {
     padding-left: var(--bs-navbar-nav-link-padding-x);
     color: #fff;
 }
+
+.box-section.box-contact-section-2 img {
+    max-width: 100%;
+    height: auto;
+}
