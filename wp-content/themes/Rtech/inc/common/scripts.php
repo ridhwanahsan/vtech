@@ -16,6 +16,7 @@ function vtech_enqueue_styles()
 
 // Enqueue main style
     wp_enqueue_style('main-style', get_template_directory_uri() . '/assets/css/main.css', array(), null);
+    wp_enqueue_style('theme-style', get_template_directory_uri() . '/style.css', array(), null);
 }
 add_action('wp_enqueue_scripts', 'vtech_enqueue_styles');function vtech_enqueue_scripts()
 {

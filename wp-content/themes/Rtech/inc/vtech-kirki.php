@@ -170,8 +170,88 @@ vtech_header01_panel();
 
 
 
+// offCanvas menu
+function vtech_offCanvas_menu()
+{
+new \Kirki\Panel(
+    'offCanvas_menu_panel',
+    [
+        'priority'    => 10,
+        'title'       => esc_html__( 'OffCanvas Menu', 'kirki' ),
+        'description' => esc_html__( 'Customize OffCanvas Menu settings', 'kirki' ),
+        'panel'       => 'vtech_panel', // Attach to vtech panel
+    ]
+);
+new \Kirki\Section(
+    'offCanvas_menu_section',
+    [
+        'title'       => esc_html__( 'OffCanvas Menu', 'kirki' ),
+        'description' => esc_html__( 'Customize the content section of Header 01', 'kirki' ),
+        'panel'       => 'offCanvas_menu_panel', // Attach to Header 01 panel
+        'priority'    => 20,
+    ]
+);
+new \Kirki\Field\Image(
+	[
+		'settings'    => 'offCanvas_menu_logo',
+		'label'       => esc_html__( 'Image Control (array)', 'kirki' ),
+		'description' => esc_html__( 'The saved value will be an array.', 'kirki' ),
+		'section'     => 'offCanvas_menu_section',
+		'default'     => '',
+		
+		
+	]
+);
 
+new \Kirki\Field\Text(
+    [
+        'settings' => 'offCanvas_gallery_title', 
+        'label'    => esc_html__( 'offCanvas Gallery Title', 'kirki' ),
+        'section'  => 'offCanvas_menu_section',
+        'default'  => esc_html__( 'Gallery', 'kirki' ),
+        'priority' => 10,
+    ]
+);
+new \Kirki\Field\Text(
+    [
+        'settings' => 'contact_section_title', 
+        'label'    => esc_html__( 'Contact Section Title', 'kirki' ),
+        'section'  => 'offCanvas_menu_section',
+        'default'  => esc_html__( 'Contact Us', 'kirki' ),
+        'priority' => 10,
+    ]
+);
+new \Kirki\Field\Text(
+    [
+        'settings' => 'offCanvas_adress', 
+        'label'    => esc_html__( 'offCanvas Adress', 'kirki' ),
+        'section'  => 'offCanvas_menu_section',
+        'default'  => esc_html__( '62, Business Str Hobert, AU', 'kirki' ),
+        'priority' => 10,
+    ]
+);
+new \Kirki\Field\Text(
+    [
+        'settings' => 'offCanvas_work_hours', 
+        'label'    => esc_html__( 'offCanvas Work Hours', 'kirki' ),
+        'section'  => 'offCanvas_menu_section',
+        'default'  => esc_html__( 'Mon - Fri: 9:00 - 18:00', 'kirki' ),
+        'priority' => 10,
+    ]
+);
+new \Kirki\Field\Text(
+    [
+        'settings' => 'offCanvas_phone', 
+        'label'    => esc_html__( 'offCanvas Phone', 'kirki' ),
+        'section'  => 'offCanvas_menu_section',
+        'default'  => esc_html__( '+98 90980798', 'kirki' ),
+        'priority' => 10,
+    ]
+);
+    
 
+}
+vtech_offCanvas_menu();
 
 
 

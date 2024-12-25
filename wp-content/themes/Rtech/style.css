@@ -10,3 +10,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: rtech
 Tags: custom-theme, responsive, modern
 */
+header .navbar-expand-lg .navbar-nav .nav-link a {
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+    color: #fff;
+}

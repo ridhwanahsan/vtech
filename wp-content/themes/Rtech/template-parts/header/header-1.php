@@ -12,7 +12,16 @@
  $pinterest_link = get_theme_mod( 'facebook_link', '#' );
  //header01 logo
  $header01_menu_logo = get_theme_mod( 'header01_menu_logo', '#' );
+ // offCanvas menu
+ $offCanvas_menu_logo = get_theme_mod( 'offCanvas_menu_logo', '#' );
+ $offCanvas_menu_title = get_theme_mod( 'offCanvas_menu_title', '#' );
+ $offCanvas_gallery_title = get_theme_mod( 'offCanvas_gallery_title', '#' );
  $header01_menu_gallery_1 = get_theme_mod( 'header01_menu_gallery_1', '#' );
+ $contact_section_title = get_theme_mod( 'contact_section_title', '#' );
+ $offCanvas_adress = get_theme_mod( 'offCanvas_adress', '#' );
+ $offCanvas_work_hours = get_theme_mod( 'offCanvas_work_hours', '#' );
+ $offCanvas_phone = get_theme_mod( 'offCanvas_phone', '#' );
+ 
 
 ?>
 <div id="myOverlay" class="overlay search-popup">
@@ -120,93 +129,9 @@
         <div class="container px-3">
             <a class="navbar-brand pe-4" href="<?php echo esc_url(home_url('/'))?>"><img
                     src="<?php echo esc_url($header01_menu_logo)?>" alt /></a>
-            <ul class="navbar-nav gap-1 align-items-lg-center me-auto">
-                <li class="nav-item dropdown menu-item-has-children">
-                    <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Home</a>
-                    <div class="mega-menu">
-                        <div class="row">
-                            <div class="col-6">
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="index.html">Home page 01</a></li>
-                                    <li><a class="dropdown-item" href="index-2.html">Home page 02</a></li>
-                                    <li><a class="dropdown-item" href="index-3.html">Home page 03</a></li>
-                                    <li><a class="dropdown-item" href="index-4.html">Home page 04</a></li>
-                                    <li><a class="dropdown-item" href="index-5.html">Home page 05</a></li>
-                                    <li><a class="dropdown-item" href="index-6.html">Home page 06</a></li>
-                                    <li><a class="dropdown-item" href="index-7.html">Home page 07</a></li>
-                                    <li><a class="dropdown-item" href="index-8.html">Home page 08</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-6">
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="index-9.html">Home page 09</a></li>
-                                    <li><a class="dropdown-item" href="index-10.html">Home page 10</a></li>
-                                    <li><a class="dropdown-item" href="index-11.html">Home page 11</a></li>
-                                    <li><a class="dropdown-item" href="index-12.html">Home page 12</a></li>
-                                    <li><a class="dropdown-item" href="index-13.html">Home page 13</a></li>
-                                    <li><a class="dropdown-item" href="index-14.html">Home page 14</a></li>
-                                    <li><a class="dropdown-item" href="index-15.html">Home page 15</a></li>
-                                    <li><a class="dropdown-item" href="index-16.html">Home page 16</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item dropdown menu-item-has-children">
-                    <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">About</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
-                        <li><a class="dropdown-item" href="about-us-2.html">About Us 2</a></li>
-                        <li><a class="dropdown-item" href="about-us-3.html">About Us 3</a></li>
-                        <li><a class="dropdown-item" href="about-us-4.html">About Us 4</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown menu-item-has-children">
-                    <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Services</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="services.html">Services 01</a></li>
-                        <li><a class="dropdown-item" href="services-2.html">Services 02</a></li>
-                        <li><a class="dropdown-item" href="services-3.html">Services 03</a></li>
-                        <li><a class="dropdown-item" href="services-4.html">Services 04</a></li>
-                        <li><a class="dropdown-item" href="service-detail.html">Services Details 01</a></li>
-                        <li><a class="dropdown-item" href="service-detail-2.html">Services Details 02</a></li>
-                        <li><a class="dropdown-item" href="service-detail-3.html">Services Details 03</a></li>
-                        <li><a class="dropdown-item" href="service-detail-4.html">Services Details 04</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown menu-item-has-children">
-                    <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Projects</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="project.html">Project List</a></li>
-                        <li><a class="dropdown-item" href="project-detail.html">Project Details</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown menu-item-has-children">
-                    <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">News</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="news-grid.html">News Grid</a></li>
-                        <li><a class="dropdown-item" href="news-grid-sidebar.html">News Grid Sidebar</a></li>
-                        <li><a class="dropdown-item" href="news-details.html">Blog Details</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown menu-item-has-children">
-                    <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Pages</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
-                        <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
-                        <li><a class="dropdown-item" href="team.html">Team</a></li>
-                        <li><a class="dropdown-item" href="team-detail.html">Team Details</a></li>
-                        <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
-                        <li><a class="dropdown-item" href="404.html">Error 404</a></li>
-                    </ul>
-                </li>
-            </ul>
+           
+               <?php vtech_menu();?>
+         
 
             <div class="d-flex align-items-center gap-1">
                 <a href="javascript:void(0)" class="btn-open-search">
@@ -255,90 +180,14 @@
             </button>
         </div>
         <div class="offCanvas__logo mb-20">
-            <a href="index.html"><img src="<?php echo esc_url($header01_menu_logo)?>" alt="Logo" /></a>
+            <a href="index.html"><img src="<?php echo esc_url($offCanvas_menu_logo)?>" alt="Logo" /></a>
         </div>
         <div class="offCanvas__side-info mb-30">
-            <ul class="navbar-nav navbar-nav-mobile">
-                <li class="nav-item dropdown menu-item-has-children">
-                    <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Home</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="index.html">Home page 1</a></li>
-                        <li><a class="dropdown-item" href="index-2.html">Home page 2</a></li>
-                        <li><a class="dropdown-item" href="index-3.html">Home page 3</a></li>
-                        <li><a class="dropdown-item" href="index-4.html">Home page 4</a></li>
-                        <li><a class="dropdown-item" href="index-5.html">Home page 5</a></li>
-                        <li><a class="dropdown-item" href="index-6.html">Home page 6</a></li>
-                        <li><a class="dropdown-item" href="index-7.html">Home page 7</a></li>
-                        <li><a class="dropdown-item" href="index-8.html">Home page 8</a></li>
-                        <li><a class="dropdown-item" href="index-9.html">Home page 9</a></li>
-                        <li><a class="dropdown-item" href="index-10.html">Home page 10</a></li>
-                        <li><a class="dropdown-item" href="index-11.html">Home page 11</a></li>
-                        <li><a class="dropdown-item" href="index-12.html">Home page 12</a></li>
-                        <li><a class="dropdown-item" href="index-13.html">Home page 13</a></li>
-                        <li><a class="dropdown-item" href="index-14.html">Home page 14</a></li>
-                        <li><a class="dropdown-item" href="index-15.html">Home page 15</a></li>
-                        <li><a class="dropdown-item" href="index-16.html">Home page 16</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown menu-item-has-children">
-                    <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">About</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
-                        <li><a class="dropdown-item" href="about-us-2.html">About Us 2</a></li>
-                        <li><a class="dropdown-item" href="about-us-3.html">About Us 3</a></li>
-                        <li><a class="dropdown-item" href="about-us-4.html">About Us 4</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown menu-item-has-children">
-                    <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Services</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="services.html">Services 01</a></li>
-                        <li><a class="dropdown-item" href="services-2.html">Services 02</a></li>
-                        <li><a class="dropdown-item" href="services-3.html">Services 03</a></li>
-                        <li><a class="dropdown-item" href="services-4.html">Services 03</a></li>
-                        <li><a class="dropdown-item" href="service-detail.html">Service Details 01</a></li>
-                        <li><a class="dropdown-item" href="service-detail-2.html">Service Details 02</a></li>
-                        <li><a class="dropdown-item" href="service-detail-3.html">Service Details 03</a></li>
-                        <li><a class="dropdown-item" href="service-detail-4.html">Service Details 04</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown menu-item-has-children">
-                    <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Projects</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="services.html">Project List</a></li>
-                        <li><a class="dropdown-item" href="services-2.html">Project Detail</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown menu-item-has-children">
-                    <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">News</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="news-grid.html">News Grid</a></li>
-                        <li><a class="dropdown-item" href="news-grid-sidebar.html">News Grid Sidebar</a></li>
-                        <li><a class="dropdown-item" href="news-details.html">Blog Details</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown menu-item-has-children">
-                    <a class="nav-link fw-medium" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Pages</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
-                        <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
-                        <li><a class="dropdown-item" href="team.html">Team</a></li>
-                        <li><a class="dropdown-item" href="team-detail.html">Team Details</a></li>
-                        <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
-                        <li><a class="dropdown-item" href="404.html">Error 404</a></li>
-                    </ul>
-                </li>
-            </ul>
+       <?php vtech_menu();?>
         </div>
         <div class="side-gallery mb-4">
             <div class="pt-1"></div>
-            <h4 class="mt-3 mb-3">Gallery</h4>
+            <h4 class="mt-3 mb-3"><?php echo esc_html( $offCanvas_gallery_title ); ?></h4>
             <div class="grid-items">
                 <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
                     <img class="g-col-4" src="<?php echo esc_url($header01_menu_gallery_1)?>" alt="vatech" />
@@ -370,14 +219,14 @@
             </div>
         </div>
         <div class="box-contactus mb-30">
-            <h5 class="title-contactus neutral-1000 mb-3">Contact Us</h5>
+            <h5 class="title-contactus neutral-1000 mb-3"><?php echo esc_html( $contact_section_title ); ?></h5>
             <div class="contact-info">
-                <p class="address-2 text-md-medium neutral-1000"><strong>
-                    </strong><?php echo get_theme_mod('header01_location_address'); ?></p>
+                <p class="address-2 text-md-medium neutral-1000"><strong>Address:
+                    </strong><?php echo get_theme_mod('offCanvas_adress'); ?></p>
                 <p class="hour-work-2 text-md-medium neutral-1000"><strong>Hours: </strong>
-                    <?php echo get_theme_mod('footer_hours'); ?></p>
+                    <?php echo get_theme_mod('offCanvas_work_hours'); ?></p>
                 <p class="hour-work-2 text-md-medium neutral-1000"><strong>Phone: </strong>
-                    <?php echo get_theme_mod('header01_top_phone_number'); ?></p>
+                    <?php echo get_theme_mod('offCanvas_phone'); ?></p>
             </div>
         </div>
     </div>
