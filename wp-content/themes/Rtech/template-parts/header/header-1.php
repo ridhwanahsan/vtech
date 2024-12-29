@@ -1,9 +1,9 @@
 <?php 
  $header01_top_switch = get_theme_mod( 'header01_top_switch', true );
- $header01_location_address = get_theme_mod( 'header01_location_address', '62, Business Str Hobert, AU' );
- $header01_top_mail_adress = get_theme_mod( 'header01_top_mail_adress', 'info@vatech.com' );
- $header01_top_phone_number = get_theme_mod( 'header01_top_phone_number', '+98 90980798' );
- $header01_menu_btn_txt = get_theme_mod( 'header01_menu_btn_txt', 'Get Started' );
+ $header01_location_address = get_theme_mod( 'header01_location_address', esc_html__('62, Business Str Hobert, AU', 'rtech') );
+ $header01_top_mail_adress = get_theme_mod( 'header01_top_mail_adress', esc_html__('info@vatech.com', 'rtech') );
+ $header01_top_phone_number = get_theme_mod( 'header01_top_phone_number', esc_html__('+98 90980798', 'rtech') );
+ $header01_menu_btn_txt = get_theme_mod( 'header01_menu_btn_txt', esc_html__('Get Started', 'rtech') );
  $header01_menu_btn_link = get_theme_mod( 'header01_menu_btn_link', '#' );
  //header01 top social links
  $header01_top_facebook_link = get_theme_mod( 'facebook_link', '#' );
@@ -11,34 +11,11 @@
  $header01_top_twitter_link = get_theme_mod( 'twitter_link', '#' );
  $pinterest_link = get_theme_mod( 'facebook_link', '#' );
  //header01 logo
- $header01_menu_logo = get_theme_mod( 'header01_menu_logo', '#' );
- // offCanvas menu
- $offCanvas_menu_logo = get_theme_mod( 'offCanvas_menu_logo', '#' );
- $offCanvas_menu_title = get_theme_mod( 'offCanvas_menu_title', '#' );
- $offCanvas_gallery_title = get_theme_mod( 'offCanvas_gallery_title', '#' );
- $header01_menu_gallery_1 = get_theme_mod( 'header01_menu_gallery_1', '#' );
- $contact_section_title = get_theme_mod( 'contact_section_title', '#' );
- $offCanvas_adress = get_theme_mod( 'offCanvas_adress', '#' );
- $offCanvas_work_hours = get_theme_mod( 'offCanvas_work_hours', '#' );
- $offCanvas_phone = get_theme_mod( 'offCanvas_phone', '#' );
+ $header01_menu_logo = get_theme_mod( 'header01_menu_logo', get_template_directory_uri() . '/assets/img/logo.png' );
  
-
 ?>
-<div id="myOverlay" class="overlay search-popup">
-    <div class="overlay-content">
-        <span class="search-close closebtn" onclick="closeSearch()">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
-                <path
-                    d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z">
-                </path>
-            </svg>
-        </span>
-        <form action="#">
-            <input type="text" placeholder="Search.." name="search" />
-            <button type="submit" class="btn btn-primary-500">Search</button>
-        </form>
-    </div>
-</div>
+
+<?php search_header_menu();?>
 
 <!--top-bar-->
 <?php if ( !empty( $header01_top_switch ) ): ?>
@@ -168,68 +145,5 @@
             </div>
         </div>
     </nav>
-    <!-- offCanvas-menu -->
-    <div class="offCanvas__info">
-        <div class="offCanvas__close-icon menu-close">
-            <button>
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
-                    <path
-                        d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z">
-                    </path>
-                </svg>
-            </button>
-        </div>
-        <div class="offCanvas__logo mb-20">
-            <a href="index.html"><img src="<?php echo esc_url($header01_menu_logo)?>" alt="Logo" /></a>
-        </div>
-        <div class="offCanvas__side-info mb-30">
-       <?php vtech_menu();?>
-        </div>
-        <div class="side-gallery mb-4">
-            <div class="pt-1"></div>
-            <h4 class="mt-3 mb-3"><?php echo esc_html( $offCanvas_gallery_title ); ?></h4>
-            <div class="grid-items">
-                <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                    <img class="g-col-4" src="<?php echo esc_url($header01_menu_gallery_1)?>" alt="vatech" />
-                </div>
-                <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                    <img class="g-col-4" src="<?php echo esc_url($header01_menu_gallery_1)?>" alt=" vatech" />
-                </div>
-                <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                    <img class="g-col-4" src="<?php echo esc_url($header01_menu_gallery_1)?>" alt="vatech" />
-                </div>
-                <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                    <img class="g-col-4" src="<?php echo esc_url($header01_menu_gallery_1)?>" alt="vatech" />
-                </div>
-                <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                    <img class="g-col-4" src="<?php echo esc_url($header01_menu_gallery_1)?>" alt="vatech" />
-                </div>
-                <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                    <img class="g-col-4" src="<?php echo esc_url($header01_menu_gallery_1)?>" alt="vatech" />
-                </div>
-                <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                    <img class="g-col-4" src="<?php echo esc_url($header01_menu_gallery_1)?>" alt="vatech" />
-                </div>
-                <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                    <img class="g-col-4" src="<?php echo esc_url($header01_menu_gallery_1)?>" alt="vatech" />
-                </div>
-                <div class="zoom-img rounded-3 d-inline-flex overflow-hidden">
-                    <img class="g-col-4" src="<?php echo esc_url($header01_menu_gallery_1)?>" alt="vatech" />
-                </div>
-            </div>
-        </div>
-        <div class="box-contactus mb-30">
-            <h5 class="title-contactus neutral-1000 mb-3"><?php echo esc_html( $contact_section_title ); ?></h5>
-            <div class="contact-info">
-                <p class="address-2 text-md-medium neutral-1000"><strong>Address:
-                    </strong><?php echo get_theme_mod('offCanvas_adress'); ?></p>
-                <p class="hour-work-2 text-md-medium neutral-1000"><strong>Hours: </strong>
-                    <?php echo get_theme_mod('offCanvas_work_hours'); ?></p>
-                <p class="hour-work-2 text-md-medium neutral-1000"><strong>Phone: </strong>
-                    <?php echo get_theme_mod('offCanvas_phone'); ?></p>
-            </div>
-        </div>
-    </div>
-    <div class="offCanvas__overly"></div>
-
+    
 </header>

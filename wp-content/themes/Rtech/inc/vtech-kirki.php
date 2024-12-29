@@ -8,164 +8,90 @@ new \Kirki\Panel(
         'description' => esc_html__( 'My Panel Description for vtech theme.', 'kirki' ),
     ]
 );
+function vtech_breadcrumb_section(){
+    new \Kirki\Section(
+        'vtech_breadcrumb_section',
+        [
+            'title'       => esc_html__( 'Breadcrumb', 'vtech' ),
+            'description' => esc_html__( 'My Breadcrumb Section Description.', 'vtech' ),
+            'panel'       => 'vtech_panel',
+            'priority'    => 10,
+        ]
+    );
 
+    new \Kirki\Field\Image(
+        [
+            'settings'    => 'breadcrumb_bg_img',
+            'label'       => esc_html__( 'Breadcrumb BG Image', 'vtech' ),
+            'description' => esc_html__( 'Please set your footer breadcrunmb image', 'vtech' ),
+            'section'     => 'vtech_breadcrumb_section',
+        ]
+    );
+    new \Kirki\Field\Image(
+        [
+            'settings'    => 'breadcrumb_shape_img',
+            'label'       => esc_html__( 'Breadcrumb shape Image', 'vtech' ),
+            'description' => esc_html__( 'Please set your footer breadcrunmb image', 'vtech' ),
+            'section'     => 'vtech_breadcrumb_section',
+        ]
+    );
+    new \Kirki\Field\Color( 
+        [
+            'settings'    => 'breadcrumb_bg_color',
+            'label'       => __('Breadcrumb BG Color', 'vtech'),
+            'description' => esc_html__('This is a Breadcrumb bg color control.', 'vtech'),
+            'section'     => 'vtech_breadcrumb_section',
+            'default'     => '#e1e1e1',
+            'priority'    => 10,
+        ] 
+    );
+    new \Kirki\Field\Color(
+        [
+            'settings'    => 'breadcrumb_title_color',
+            'label'       => __('Breadcrumb Title Color', 'vtech'),
+            'description' => esc_html__('This is a Breadcrumb title color control.', 'vtech'),
+            'section'     => 'vtech_breadcrumb_section',
+            'default'     => '#ffffff',
+            'priority'    => 11,
+        ]
+    );
+    new \Kirki\Field\Color(
+        [
+            'settings'    => 'breadcrumb_text_color', 
+            'label'       => __('Breadcrumb Text Color', 'vtech'),
+            'description' => esc_html__('This is a Breadcrumb text color control.', 'vtech'),
+            'section'     => 'vtech_breadcrumb_section',
+            'default'     => '#ffffff',
+            'priority'    => 12,
+        ]
+    );
+    new \Kirki\Field\Text(
+        [
+            'settings'    => 'breadcrumb_font_size',
+            'label'       => __('Breadcrumb Font Size', 'vtech'),
+            'description' => esc_html__('Enter font size with unit (e.g. 16px)', 'vtech'),
+            'section'     => 'vtech_breadcrumb_section',
+            'default'     => '16px',
+            'priority'    => 13,
+        ]
+    );
+   
+}
+vtech_breadcrumb_section();
 // Add the Header 01 Panel under vtech theme panel
 
 function vtech_header01_panel() {
-   new \Kirki\Panel(
-    'header01_panel',
-    [
-        'priority'    => 10,
-        'title'       => esc_html__( 'Header 01', 'kirki' ),
-        'description' => esc_html__( 'Customize Header 01 settings', 'kirki' ),
-        'panel'       => 'vtech_panel', // Attach to vtech panel
-    ]
-);
- 
-new \Kirki\Section(
-    'header01_top_section',
-    [
-        'title'       => esc_html__( 'Header01 top', 'kirki' ),
-        'description' => esc_html__( 'Customize the content section of Header 01', 'kirki' ),
-        'panel'       => 'header01_panel', // Attach to Header 01 panel
-        'priority'    => 20,
-    ]
-);
-new \Kirki\Field\Checkbox_Switch(
-	[
-		'settings'    => 'header01_top_switch',
-		'label'       => esc_html__( 'Header 01 Top Switch', 'kirki' ),
-		'description' => esc_html__( 'Simple switch control', 'kirki' ),
-		'section'     => 'header01_top_section',
-		'default'     => 'on',
-		'choices'     => [
-			'on'  => esc_html__( 'Enable', 'kirki' ),
-			'off' => esc_html__( 'Disable', 'kirki' ),
-		],
-	]
-);
-new \Kirki\Field\Text(
-    [
-        'settings' => 'header01_location_address', 
-        'label'    => esc_html__( 'Location Address', 'kirki' ),
-        'section'  => 'header01_top_section',
-        'default'  => esc_html__( '62, Business Str Hobert, AU', 'kirki' ),
-        'priority' => 10,
-    ]
-);
-new \Kirki\Field\Text(
-    [
-        'settings' => 'header01_top_mail_adress', 
-        'label'    => esc_html__( 'Mail Address', 'kirki' ),
-        'section'  => 'header01_top_section',
-        'default'  => esc_html__( 'info@vatech.com', 'kirki' ),
-        'priority' => 10,
-    ]
-);
-new \Kirki\Field\Number(
-    [
-        'settings' => 'header01_top_phone_number', 
-        'label'    => esc_html__( 'Phone Number', 'kirki' ),
-        'section'  => 'header01_top_section',
-        'default'  => esc_html__( '+98 90980798', 'kirki' ),
-        'priority' => 10,
-    ]
-);
-//header01 top social links
-new \Kirki\Field\URL(
-	[
-		'settings' => 'facebook_link',
-		'label'    => esc_html__( 'facebook link', 'kirki' ),
-		'section'  => 'header01_top_section',
-		'default'  => 'https://yoururl.com/',
-		'priority' => 10,
-	]
-);
-new \Kirki\Field\URL(
-	[
-		'settings' => 'instagram_link',
-		'label'    => esc_html__( 'insta link', 'kirki' ),
-		'section'  => 'header01_top_section',
-		'default'  => 'https://yoururl.com/',
-		'priority' => 10,
-	]
-);
-new \Kirki\Field\URL(
-	[
-		'settings' => 'twitter_link',
-		'label'    => esc_html__( 'twitter link', 'kirki' ),
-		'section'  => 'header01_top_section',
-		'default'  => 'https://yoururl.com/',
-		'priority' => 10,
-	]
-);
-new \Kirki\Field\URL(
-	[
-		'settings' => 'pinterest_link',
-		'label'    => esc_html__( 'pinterest link', 'kirki' ),
-		'section'  => 'header01_top_section',
-		'default'  => 'https://yoururl.com/',
-		'priority' => 10,
-	]
-);
-
-// menu contents
-new \Kirki\Section(
-    'header01_nav_section',
-    [
-        'title'       => esc_html__( 'Header01 Menu', 'kirki' ),
-        'description' => esc_html__( 'Customize the content section of Header 01', 'kirki' ),
-        'panel'       => 'header01_panel', // Attach to Header 01 panel
-        'priority'    => 30,
-    ]
-); 
-new \Kirki\Field\Image(
-	[
-		'settings'    => 'header01_menu_logo',
-		'label'       => esc_html__( 'Image Control (array)', 'kirki' ),
-		'description' => esc_html__( 'The saved value will be an array.', 'kirki' ),
-		'section'     => 'header01_nav_section',
-		'default'     => '',
-		
-		
-	]
-);
-
-new \Kirki\Field\Upload(
-    [
-        'settings'    => 'header01_menu_gallery_1',
-        'label'       => esc_html__( 'Image Gallery (multiple images)', 'kirki' ),
-        'description' => esc_html__( 'Select multiple images for the menu gallery.', 'kirki' ),
-        'section'     => 'header01_nav_section',
-        'default'     => '',
-        'priority'    => 10,
-        'multiple'    => 999, // Allow multiple file uploads
-    ]
-);
-
-new \Kirki\Field\Text(
-    [
-        'settings' => 'header01_menu_btn_txt', 
-        'label'    => esc_html__( 'Menu Button Text', 'kirki' ),
-        'section'  => 'header01_nav_section',
-        'default'  => esc_html__( 'Get a quote', 'kirki' ),
-        'priority' => 10,
-    ]
-);
-new \Kirki\Field\URL(
-	[
-		'settings' => 'header01_menu_btn_link',
-		'label'    => esc_html__( 'Menu Button Link', 'kirki' ),
-		'section'  => 'header01_nav_section',
-		'default'  => 'https://yoururl.com/',
-		'priority' => 10,
-	]
-);
-
- 
+   get_template_part('inc/function-kirki/header1-fun');
 }
 
 vtech_header01_panel();
+
+// header 2 content 
+function vtech_header2_panel()
+{
+get_template_part('inc/function-kirki/header2-fun');
+};
+vtech_header2_panel();
 
 
 
@@ -202,6 +128,19 @@ new \Kirki\Field\Image(
 		
 	]
 );
+new \Kirki\Field\Select(
+    [
+        'settings'    => 'offCanvas_menu_select',
+        'label'       => esc_html__( 'Select Menu', 'kirki' ),
+        'section'     => 'offCanvas_menu_section',
+        'default'     => '',
+        'placeholder' => esc_html__( 'Choose a menu', 'kirki' ),
+        'choices'     => wp_get_nav_menus() ? array_combine(
+            wp_list_pluck(wp_get_nav_menus(), 'term_id'),
+            wp_list_pluck(wp_get_nav_menus(), 'name')
+        ) : ['' => esc_html__('No menus found', 'kirki')],
+    ]
+);
 
 new \Kirki\Field\Text(
     [
@@ -210,6 +149,29 @@ new \Kirki\Field\Text(
         'section'  => 'offCanvas_menu_section',
         'default'  => esc_html__( 'Gallery', 'kirki' ),
         'priority' => 10,
+    ]
+);
+new \Kirki\Field\Repeater(
+    [
+        'settings' => 'offCanvas_gallery',
+        'label'    => esc_html__('Gallery Images', 'kirki'),
+        'section'  => 'offCanvas_menu_section',
+        'priority' => 10,
+        'default'  => [
+            [
+                'image' => get_template_directory_uri() . '/assets/img/gallery-1.jpg',
+            ],
+        ],
+        'fields'   => [
+            'image' => [
+                'type'        => 'image',
+                'label'       => esc_html__('Image', 'kirki'),
+                'description' => esc_html__('Select an image', 'kirki'),
+                'default'     => [
+                    'image' => get_template_directory_uri() . '/assets/img/gallery-1.jpg',
+                ],
+            ],
+        ],
     ]
 );
 new \Kirki\Field\Text(
@@ -247,8 +209,7 @@ new \Kirki\Field\Text(
         'default'  => esc_html__( '+98 90980798', 'kirki' ),
         'priority' => 10,
     ]
-);
-    
+);    
 
 }
 vtech_offCanvas_menu();
@@ -354,6 +315,7 @@ function vtech_footer_panel() {
             'priority'    => 10,
         ]
     );
+    
 
     // Footer Useful Links Title
     new \Kirki\Field\Text(

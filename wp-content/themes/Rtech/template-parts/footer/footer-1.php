@@ -1,3 +1,19 @@
+ <?php 
+ $offCanvas_menu_logo = get_theme_mod('offCanvas_menu_logo', get_template_directory_uri() . '/assets/images/logo.png');
+ $offCanvas_menu_select = get_theme_mod('offCanvas_menu_select', 'primary-menu');
+ $offCanvas_gallery_title = get_theme_mod('offCanvas_gallery_title', 'Our Gallery');
+ $offCanvas_gallery = get_theme_mod('offCanvas_gallery', '');
+ $contact_section_title = get_theme_mod('contact_section_title', 'Contact Info');
+ $offCanvas_adress = get_theme_mod('offCanvas_adress', '123 Main Street, New York, NY 10001');
+ $offCanvas_work_hours = get_theme_mod('offCanvas_work_hours', 'Mon - Fri: 9:00 AM - 6:00 PM');
+ $offCanvas_phone = get_theme_mod('offCanvas_phone', '+1 (555) 123-4567');
+ $footer_newsletter_title = get_theme_mod('footer_newsletter_title', 'Newsletter');
+ $footer_newsletter_text = get_theme_mod('footer_newsletter_text', 'Subscribe to our newsletter to receive updates and news.');
+ $footer_newsletter_placeholder = get_theme_mod('footer_newsletter_placeholder', 'Enter your email');
+ $footer_social_title = get_theme_mod('footer_social_title', 'Follow Us');
+ ?>
+ 
+ 
  <footer>
      <div class="container-fluid ft-bgr section-footer">
          <div class="container">
@@ -38,30 +54,12 @@
                          <span class="color-white"><?php echo get_theme_mod('footer_hours'); ?></span>
                      </p>
                  </div>
-                 <div class="col-lg-3 col-md-6">
-                     <h3 class="text-footer pb-1"><?php echo get_theme_mod('footer_menu_title'); ?></h3>
-                     <?php
-                     wp_nav_menu(array(
-                         'theme_location' => 'footer-menu-1',
-                         'container' => 'div',
-                         'container_class' => 'd-flex flex-column align-items-start',
-                         'menu_class' => '',
-                         'add_li_class' => 'hover-effect paragraph-base grey-100 pt-2'
-                     ));
-                     ?>
-                 </div>
-                 <div class="col-lg-3 col-md-6">
-                     <h3 class="text-footer pb-1"><?php echo get_theme_mod('footer_useful_links_title'); ?></h3>
-                     <?php
-                     wp_nav_menu(array(
-                         'theme_location' => 'footer-menu-2',
-                         'container' => 'div',
-                         'container_class' => 'd-flex flex-column align-items-start',
-                         'menu_class' => '',
-                         'add_li_class' => 'hover-effect paragraph-base grey-100 pt-2'
-                     ));
-                     ?>
-                 </div>
+             
+                     <!-- for widget -->
+                
+                 
+                     <?php dynamic_sidebar('footer-menu-widget'); ?>
+                
                  <div class="col-lg-3 col-md-6">
                      <h3 class="text-footer pb-1"><?php echo get_theme_mod('footer_newsletter_title'); ?></h3>
                      <div class="pt-4">

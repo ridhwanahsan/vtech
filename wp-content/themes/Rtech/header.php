@@ -12,11 +12,10 @@
 
 <body <?php body_class(); ?>>
 
-    <?php 
-    get_template_part('template-parts/header/header-1');
  
- 
- ?>
+    <?php get_template_part('template-parts/offcanvas/offcanvas-1');?>
+    <?php do_action('multi_header_variation', 'vtech_header_style_multi');?>
+    <?php do_action('breadcrumb_header_before');?>
 
 
 
