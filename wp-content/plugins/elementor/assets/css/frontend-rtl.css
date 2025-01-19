@@ -1,4 +1,4 @@
-/*! elementor - v3.26.0 - 22-12-2024 */
+/*! elementor - v3.26.0 - 15-01-2025 */
 .elementor-hidden {
   display: none;
 }
@@ -2131,6 +2131,7 @@ body.rtl .e-con {
 }
 
 @media (max-width: 767px) {
+  .elementor .elementor-hidden-phone,
   .elementor .elementor-hidden-mobile {
     display: none;
   }

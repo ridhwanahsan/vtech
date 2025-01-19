@@ -10,6 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: rtech
 Tags: custom-theme, responsive, modern
 */
+
 header .navbar-expand-lg .navbar-nav .nav-link a {
     padding-right: var(--bs-navbar-nav-link-padding-x);
     padding-left: var(--bs-navbar-nav-link-padding-x);
@@ -25,13 +26,12 @@ header .navbar-expand-lg .navbar-nav .nav-link a {
     margin-top: 0;
 }
 
-
 li.page-item.active span {
     display: inline-block;
     border-radius: 3px !important;
-     background-image: linear-gradient(to right, #1AB69D, #31B978);
+    background-image: linear-gradient(to right, #1AB69D, #31B978);
     font-size: 20px;
-       color: var(--tc-theme-main);
+    color: var(--tc-theme-main);
     line-height: 30px;
     font-weight: 600;
     font-family: var(--tc-ag-font-family);
@@ -39,13 +39,17 @@ li.page-item.active span {
     border: 1px solid var(--tc-theme-border-10);
     cursor: pointer;
 }
+
 .box-section.box-contact-section-2 .box-paginations {
     display: inline-block;
     width: 100%;
     text-align: center;
     padding: 50px 0px;
 }
+
+
 /* offcanvas menu */
+
 .offCanvas__side-info {
     border-top: 1px solid var(--tc-theme-primary);
     padding-top: 25px;
@@ -93,14 +97,14 @@ li.page-item.active span {
     padding-left: 20px;
 }
 
-.offCanvas__side-info .menu .menu-item-has-children > a::after {
+.offCanvas__side-info .menu .menu-item-has-children>a::after {
     content: "\f282";
     font-family: "bootstrap-icons";
     margin-left: 5px;
     transition: transform 0.3s ease;
 }
 
-.offCanvas__side-info .menu .menu-item-has-children:hover > a::after {
+.offCanvas__side-info .menu .menu-item-has-children:hover>a::after {
     transform: rotate(-180deg);
 }
 
@@ -124,7 +128,7 @@ li.page-item.active span {
     }
 }
 
-.offCanvas__side-info .menu .menu-item-has-children:hover > .sub-menu {
+.offCanvas__side-info .menu .menu-item-has-children:hover>.sub-menu {
     display: block;
 }
 
@@ -132,13 +136,59 @@ li.page-item.active span {
     padding-left: 30px;
 }
 
-.offCanvas__side-info .menu .current-menu-item > a {
+.offCanvas__side-info .menu .current-menu-item>a {
     color: var(--tc-theme-primary);
     background-color: rgba(var(--tc-theme-primary-rgb), 0.1);
 }
+
+
 /* offcanvas menu end */
 
+
 /* footer menu widget */
-.footer01_menu li{
+
+.footer01_menu li {
     list-style: none;
+}
+
+.box-feedbacks ul.children li {
+  
+    justify-items: flex-start;
+    padding-left: 40px;
+}
+.box-feedbacks .reply {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--tc-neutral-2400);
+    font-weight: 400;
+    font-family: var(--tc-ag-font-family);
+}
+.box-feedbacks  .reply a,svg {
+    width: 14px;
+    font-size: 16px;
+  
+}
+#comments ul li {
+ list-style: none;
+ 
+}
+
+.list-feedbacks li .item-feedback .info-feedback .comment-text {
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+/* Text wrapping utilities */
+/* revese section */
+
+.rating-stars i {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+}
+.rating-stars i.bi-star-fill {
+    color: #f39c12;
 }

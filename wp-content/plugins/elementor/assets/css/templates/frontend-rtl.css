@@ -2142,6 +2142,7 @@ body.rtl .e-con {
 }
 
 @media (max-width: ELEMENTOR_SCREEN_MOBILE_MAX) {
+  .elementor .elementor-hidden-phone,
   .elementor .elementor-hidden-mobile {
     display: none;
   }

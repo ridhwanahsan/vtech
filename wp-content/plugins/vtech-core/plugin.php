@@ -105,6 +105,7 @@ class Plugin {
 		// Its is now safe to include Widgets files
 		require_once( __DIR__ . '/widgets/hello-world.php' );
 		require_once( __DIR__ . '/widgets/hero-widget.php' );
+		require_once( __DIR__ . '/widgets/project-list.php' );
 		require_once( __DIR__ . '/widgets/about-widget.php' );
 		require_once( __DIR__ . '/widgets/service-widget.php' );
 		require_once( __DIR__ . '/widgets/team-nember.php' );

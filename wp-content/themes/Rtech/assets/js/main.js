@@ -1,4 +1,4 @@
-(function ($) {
+(function($) {
     'use strict';
     /*=============================================
 	=              Preloader       =
@@ -10,11 +10,11 @@
     =     Offcanvas Menu      =
     =============================================*/
     function offcanvasMenu() {
-        $(".menu-tigger").on("click", function () {
+        $(".menu-tigger").on("click", function() {
             $(".offCanvas__info, .offCanvas__overly").addClass("active");
             return false;
         });
-        $(".menu-close, .offCanvas__overly").on("click", function () {
+        $(".menu-close, .offCanvas__overly").on("click", function() {
             $(".offCanvas__info, .offCanvas__overly").removeClass("active");
         });
     }
@@ -22,7 +22,7 @@
 	=          Data Background      =
     =============================================*/
     function dataBackground() {
-        $('[data-background]').each(function () {
+        $('[data-background]').each(function() {
             $(this).css('background-image', 'url(' + $(this).attr('data-background') + ')');
         });
     }
@@ -40,7 +40,7 @@
             progressPath.style.strokeDashoffset = pathLength;
             progressPath.getBoundingClientRect();
             progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
-            window.addEventListener('scroll', function (event) {
+            window.addEventListener('scroll', function(event) {
                 var scroll = document.body.scrollTop || document.documentElement.scrollTop;
                 var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
                 var progress = pathLength - (scroll * pathLength) / height;
@@ -52,7 +52,7 @@
                     progressWrap.classList.remove('active-progress');
                 }
             });
-            progressWrap.addEventListener('click', function (e) {
+            progressWrap.addEventListener('click', function(e) {
                 e.preventDefault();
                 window.scroll({
                     top: 0,
@@ -78,13 +78,13 @@
     =============================================*/
     function counterState() {
         var counters = document.querySelectorAll('.counter');
-        counters.forEach(function (counter) {
+        counters.forEach(function(counter) {
             var countTo = counter.getAttribute('data-count');
             var countNum = parseInt(counter.textContent);
             var duration = 4000;
             var stepDuration = duration / Math.abs(countTo - countNum);
             var increment = countTo > countNum ? 1 : -1;
-            var timer = setInterval(function () {
+            var timer = setInterval(function() {
                 countNum += increment;
                 counter.textContent = countNum;
                 if (countNum == countTo) {
@@ -125,6 +125,7 @@
         });
         wow.init();
     }
+
     function customSwiper() {
         const slider1 = new Swiper('.slider-group-3', {
             slidesPerView: 3,
@@ -164,7 +165,7 @@
                 prevEl: '.swiper-button-prev-style-1',
             },
             on: {
-                afterInit: function () {
+                afterInit: function() {
                     // set padding left slide
                     var leftPadding = 0;
                     var swipperRoot = $('.swipper-root');
@@ -216,7 +217,7 @@
                 prevEl: '.swiper-button-prev-style-6',
             },
             on: {
-                afterInit: function () {
+                afterInit: function() {
                     // set padding left slide
                     var leftPadding = 0;
                     var swipperRoot = $('.swipper-root');
@@ -274,7 +275,7 @@
                 prevEl: '.swiper-button-prev-style-6',
             },
             on: {
-                afterInit: function () {
+                afterInit: function() {
                     // set padding left slide
                     var leftPadding = 0;
                     var swipperRoot = $('.swipper-root');
@@ -326,7 +327,7 @@
                 prevEl: '.swiper-button-prev-style-6',
             }
         });
-        
+
         const slider2 = new Swiper('.slider-2', {
             slidesPerView: 4,
             spaceBetween: 30,
@@ -358,7 +359,7 @@
                 prevEl: '.swiper-button-prev',
             },
             on: {
-                afterInit: function () {
+                afterInit: function() {
                     // set padding left slide
                     var leftPadding = 0;
                     var swipperRoot = $('.swipper-root');
@@ -402,7 +403,7 @@
                 prevEl: '.swiper-button-prev-style-2',
             },
             on: {
-                afterInit: function () {
+                afterInit: function() {
                     // set padding left slide
                     var leftPadding = 0;
                     var swipperRoot = $('.swipper-root');
@@ -435,7 +436,7 @@
         });
 
         var swiper_animate_items = null;
-        $(".swiper-group-slide-text").each(function () {
+        $(".swiper-group-slide-text").each(function() {
             swiper_animate_items = new Swiper(this, {
                 spaceBetween: 40,
                 slidesPerView: "auto",
@@ -484,8 +485,8 @@
             initialSlide: 1,
             loop: true,
             navigation: {
-              nextEl: ".swiper-button-next-center",
-              prevEl: ".swiper-button-prev-center"
+                nextEl: ".swiper-button-next-center",
+                prevEl: ".swiper-button-prev-center"
             },
             breakpoints: {
                 1199: {
@@ -505,12 +506,13 @@
     }
     var sliderTab;
     var _tabIndex = 1;
+
     function customSwiperTab(index) {
         _tabIndex = index;
-        if (typeof sliderTab != 'undefined') {  
+        if (typeof sliderTab != 'undefined') {
             sliderTab.destroy();
         }
-        new Swiper('.slider-group-3-tab-'+index, {
+        new Swiper('.slider-group-3-tab-' + index, {
             slidesPerView: 3,
             spaceBetween: 30,
             slidesPerGroup: 1,
@@ -545,7 +547,7 @@
                 prevEl: '.swiper-button-prev-style-tab',
             },
             on: {
-                afterInit: function () {
+                afterInit: function() {
                     // set padding left slide
                     var leftPadding = 0;
                     var swipperRoot = $('.swipper-root');
@@ -558,18 +560,19 @@
                 },
             },
         });
-        sliderTab = document.querySelector('.slider-group-3-tab-'+index).swiper;
+        sliderTab = document.querySelector('.slider-group-3-tab-' + index).swiper;
     }
 
     var sliderTab2;
     var _tabIndex2 = 1;
+
     function customSwiperTab2(index) {
         _tabIndex2 = index;
-        if (typeof sliderTab2 != 'undefined') {  
+        if (typeof sliderTab2 != 'undefined') {
             sliderTab2.destroy();
         }
-        if ($('.slider-group-4-tab-'+index).length > 0) {
-            new Swiper('.slider-group-4-tab-'+index, {
+        if ($('.slider-group-4-tab-' + index).length > 0) {
+            new Swiper('.slider-group-4-tab-' + index, {
                 slidesPerView: 4,
                 spaceBetween: 30,
                 slidesPerGroup: 1,
@@ -604,7 +607,7 @@
                     prevEl: '.swiper-button-prev-style-tab',
                 },
                 on: {
-                    afterInit: function () {
+                    afterInit: function() {
                         // set padding left slide
                         var leftPadding = 0;
                         var swipperRoot = $('.swipper-root');
@@ -617,13 +620,13 @@
                     },
                 },
             });
-            sliderTab2 = document.querySelector('.slider-group-4-tab-'+index).swiper;
+            sliderTab2 = document.querySelector('.slider-group-4-tab-' + index).swiper;
         }
     }
     /*=============================================
 	=           Page Load       =
     =============================================*/
-    $(window).on('load', function () {
+    $(window).on('load', function() {
         preloader();
         progressPageLoad();
         offcanvasMenu();
@@ -635,15 +638,15 @@
         wowAnimation();
     });
 
-    $(".box-button-change-package a.btn").on("click", function(e){
+    $(".box-button-change-package a.btn").on("click", function(e) {
         e.preventDefault();
         $(".box-button-change-package a.btn").removeClass("btn-active");
         $(this).addClass("btn-active");
         var _value = $(this).data("type");
         $(".package-item").hide();
-        $('.'+_value).show();
+        $('.' + _value).show();
     });
-    $(window).resize(function(){
+    $(window).resize(function() {
         var leftPadding = 0;
         var swipperRoot = $('.swipper-root');
         if (swipperRoot.length > 0) {
@@ -655,40 +658,41 @@
 
         if ($(".auto-padding").length > 0) {
             $('.auto-padding').css('padding-left', leftPadding + 'px');
-            setTimeout(function(){
+            setTimeout(function() {
                 customSwiperTab(_tabIndex);
-            },500);
+            }, 500);
         }
     }).resize();
-    $('.nav-tabs a').on('show.bs.tab', function(){
+    $('.nav-tabs a').on('show.bs.tab', function() {
         var _tab = $(this).data("index");
         if (_tab > 0) {
             customSwiperTab(_tab);
-        }     
+        }
     });
-    $(".box-button-filter a").on('show.bs.tab', function(){
+    $(".box-button-filter a").on('show.bs.tab', function() {
         var _tab = $(this).data("index");
         if (_tab > 0) {
             customSwiperTab2(_tab);
         }
     });
 
-    $(".filter-content").on("click", function(e){
+    $(".filter-content").on("click", function(e) {
         e.preventDefault();
         var filter = $(this).data("filter");
-        $('.filter-content').removeClass('active');        
+        $('.filter-content').removeClass('active');
         $(this).addClass('active');
-        $(".item-filter").hide(); 
+        $(".item-filter").hide();
         if (filter == "all") {
-            $(".item-filter").show(); 
-        } else {   
-            $("."+filter).show();
+            $(".item-filter").show();
+        } else {
+            $("." + filter).show();
         }
         masonryFilter();
     });
-    $(".btn-open-search").on("click", function(){
+    $(".btn-open-search").on("click", function() {
         openSearch();
     });
+
     function masonryFilter() {
         if ($('.row-masonry').length > 0) {
             $('.row-masonry').masonry({
@@ -698,6 +702,7 @@
             });
         }
     }
+
     function circleText() {
         const texts = document.querySelectorAll(".circle-text");
         texts.forEach(text => {
@@ -710,11 +715,12 @@
             }
         });
     }
+
     function odometerCounter() {
         if ($('.odometer').length > 0) {
-            $('.odometer').appear(function (e) {
+            $('.odometer').appear(function(e) {
                 var odo = $('.odometer');
-                odo.each(function () {
+                odo.each(function() {
                     var countNumber = $(this).attr('data-count');
                     $(this).html(countNumber);
                 });
@@ -731,7 +737,7 @@
         });
     }
 
-    $(window).on('load', function () {
+    $(window).on('load', function() {
         circleText();
         odometerCounter();
         aosAnimation();
@@ -739,9 +745,13 @@
         masonryFilter();
     });
 })(jQuery);
+
 function openSearch() {
     document.getElementById("myOverlay").style.display = "block";
-}    
+}
+
 function closeSearch() {
     document.getElementById("myOverlay").style.display = "none";
 }
+
+

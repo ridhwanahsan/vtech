@@ -1,4 +1,4 @@
-/*! elementor - v3.26.0 - 22-12-2024 */
+/*! elementor - v3.26.0 - 15-01-2025 */
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -2883,6 +2883,7 @@ var _default = exports["default"] = /*#__PURE__*/function (_Marionette$LayoutVie
   }, {
     key: "onCloseModalClick",
     value: function onCloseModalClick() {
+      var _elementor$config$doc, _elementor$config;
       this._parent._parent._parent.hideModal();
       if (this.isFloatingButtonLibraryClose()) {
         $e.internal('document/save/set-is-modified', {
@@ -2890,12 +2891,15 @@ var _default = exports["default"] = /*#__PURE__*/function (_Marionette$LayoutVie
         });
         window.location.href = elementor.config.admin_floating_button_admin_url;
       }
+      var type = (_elementor$config$doc = (_elementor$config = elementor.config) === null || _elementor$config === void 0 || (_elementor$config = _elementor$config.document) === null || _elementor$config === void 0 ? void 0 : _elementor$config.type) !== null && _elementor$config$doc !== void 0 ? _elementor$config$doc : 'default';
+      var customEvent = new CustomEvent("core/modal/close/".concat(type));
+      window.dispatchEvent(customEvent);
     }
   }, {
     key: "isFloatingButtonLibraryClose",
     value: function isFloatingButtonLibraryClose() {
-      var _elementor$config, _elementor$config2;
-      return window.elementor && ((_elementor$config = elementor.config) === null || _elementor$config === void 0 ? void 0 : _elementor$config.admin_floating_button_admin_url) && 'floating-buttons' === ((_elementor$config2 = elementor.config) === null || _elementor$config2 === void 0 || (_elementor$config2 = _elementor$config2.document) === null || _elementor$config2 === void 0 ? void 0 : _elementor$config2.type) && (this.$el.closest('.dialog-lightbox-widget-content').find('.elementor-template-library-template-floating_button').length || this.$el.closest('.dialog-lightbox-widget-content').find('#elementor-template-library-preview').length || this.$el.closest('.dialog-lightbox-widget-content').find('#elementor-template-library-templates-empty').length);
+      var _elementor$config2, _elementor$config3;
+      return window.elementor && ((_elementor$config2 = elementor.config) === null || _elementor$config2 === void 0 ? void 0 : _elementor$config2.admin_floating_button_admin_url) && 'floating-buttons' === ((_elementor$config3 = elementor.config) === null || _elementor$config3 === void 0 || (_elementor$config3 = _elementor$config3.document) === null || _elementor$config3 === void 0 ? void 0 : _elementor$config3.type) && (this.$el.closest('.dialog-lightbox-widget-content').find('.elementor-template-library-template-floating_button').length || this.$el.closest('.dialog-lightbox-widget-content').find('#elementor-template-library-preview').length || this.$el.closest('.dialog-lightbox-widget-content').find('#elementor-template-library-templates-empty').length);
     }
   }]);
 }(Marionette.LayoutView);
