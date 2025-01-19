@@ -23,8 +23,8 @@ function vtech_register_required_plugins() {
      * If the source is NOT from the .org repo, then source is also required.
      */
 
-     $url = 'https://github.com/ridhwanahsan/theme/raw/d0ff8f431fb08788bf8f01543235184d5fa275af/source/';
-     $acf_url = 'https://github.com/ridhwanahsan/theme/raw/d0ff8f431fb08788bf8f01543235184d5fa275af/source/';
+     $url = 'https://github.com/ridhwanahsan/theme/raw/main/source/';
+     $acf_url = 'https: //github.com/ridhwanahsan/theme/raw/main/source/';
 
     $plugins = [
         [
